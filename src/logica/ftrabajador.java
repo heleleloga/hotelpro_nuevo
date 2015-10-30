@@ -107,7 +107,7 @@ public class ftrabajador {
                 int n2 = pst2.executeUpdate();
 
                 if (n2 != 0) {
-                    return false;
+                    return true;
                 } else {
 
                     return false;
@@ -125,7 +125,7 @@ public class ftrabajador {
     }
 
     public boolean editar(vtrabajador dts) {
-        sSQL = " update persona set Nombre=?,Apellidos=?,Tipo_Documento=?Num_documento=?,"
+        sSQL = " update persona set Nombre=?,Apellidos=?,Tipo_Documento=?,Num_documento=?,"
                 + "Direccion=?,Telefono=?,Email=? where Idpersona=?";
         
          sSQL2 = " update Trabajador set Sueldo=?,Acceso=?,Login=?,Password=?,Estado=?"
@@ -159,7 +159,7 @@ public class ftrabajador {
                 int n2 = pst2.executeUpdate();
 
                 if (n2 != 0) {
-                    return false;
+                    return true;
                 } else {
 
                     return false;
@@ -198,7 +198,7 @@ public class ftrabajador {
                 int n2 = pst2.executeUpdate();
 
                 if (n2 != 0) {
-                    return false;
+                    return true;
                 } else {
 
                     return false;
@@ -227,8 +227,8 @@ public class ftrabajador {
 
         sSQL = "select p.Idpersona,p.Nombre,p.Apellidos,"
                 +"t.Acceso,t.Login,t.Password,t.Estado from Persona p inner join Trabajador t "
-                + "on p.Idpersona=t.Idpersona where t.Login='"
-                + login + "' and t.Password='" + password +  "' and t.estado='Activada'";
+                + "on p.Idpersona=t.Idpersona where t.Login= '"
+                + login + "' and t.Password='" + password +  "' and t.estado='Activado'";
 
 
         try {

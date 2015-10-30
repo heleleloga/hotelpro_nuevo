@@ -40,11 +40,11 @@ public class frmusuariologin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txtusuario = new javax.swing.JTextField();
         txtpassword = new javax.swing.JPasswordField();
-        Ingresar = new javax.swing.JButton();
+        btningresar = new javax.swing.JButton();
         btnsalir = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tablalistado = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tablalistado = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,13 +54,13 @@ public class frmusuariologin extends javax.swing.JFrame {
 
         jLabel2.setText("PASSWORD:");
 
-        Ingresar.setBackground(new java.awt.Color(51, 51, 51));
-        Ingresar.setForeground(new java.awt.Color(255, 255, 255));
-        Ingresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/files/GUARDAR.png"))); // NOI18N
-        Ingresar.setText("Ingresar");
-        Ingresar.addActionListener(new java.awt.event.ActionListener() {
+        btningresar.setBackground(new java.awt.Color(51, 51, 51));
+        btningresar.setForeground(new java.awt.Color(255, 255, 255));
+        btningresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/files/GUARDAR.png"))); // NOI18N
+        btningresar.setText("Ingresar");
+        btningresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                IngresarActionPerformed(evt);
+                btningresarActionPerformed(evt);
             }
         });
 
@@ -74,6 +74,8 @@ public class frmusuariologin extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/files/lock56 (1).png"))); // NOI18N
+
         tablalistado.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -85,9 +87,7 @@ public class frmusuariologin extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(tablalistado);
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/files/lock56 (1).png"))); // NOI18N
+        jScrollPane2.setViewportView(tablalistado);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -98,13 +98,13 @@ public class frmusuariologin extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Ingresar))
+                    .addComponent(btningresar))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(37, 37, 37)
                         .addComponent(btnsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(70, 70, 70)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -112,7 +112,7 @@ public class frmusuariologin extends javax.swing.JFrame {
                             .addComponent(txtpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(42, 42, 42)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -128,17 +128,17 @@ public class frmusuariologin extends javax.swing.JFrame {
                         .addGap(30, 30, 30)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtpassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(53, 53, 53)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(Ingresar)
-                                .addComponent(btnsalir))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtpassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(21, 21, 21)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addGap(53, 53, 53)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btningresar)
+                        .addComponent(btnsalir))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -146,8 +146,8 @@ public class frmusuariologin extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 8, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 546, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 16, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,7 +160,7 @@ public class frmusuariologin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void IngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IngresarActionPerformed
+    private void btningresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btningresarActionPerformed
         
         try {
             
@@ -180,6 +180,7 @@ public class frmusuariologin extends javax.swing.JFrame {
                 frminicio form=new frminicio();
                 form.toFront();
                 form.setVisible(true);
+                
                 frminicio.lblidpersona.setText(tablalistado.getValueAt(0,0).toString());
                 frminicio.lblnombre.setText(tablalistado.getValueAt(0,1).toString());
                 frminicio.lblapellidos.setText(tablalistado.getValueAt(0,2).toString());
@@ -187,7 +188,7 @@ public class frmusuariologin extends javax.swing.JFrame {
                 
                 if (!frminicio.lblacceso.getText().equals("Administrador")) {
                     
-                    frminicio.mnuarchivo.setEnabled(false);
+                    frminicio.mnuarchivo.setEnabled(true);
                     frminicio.mnuconfiguraciones.setEnabled(false);
                     
                 }}
@@ -195,7 +196,7 @@ public class frmusuariologin extends javax.swing.JFrame {
             
             else { 
             
-            JOptionPane.showMessageDialog(rootpane,"Acceso denegado","Acceso al sistema",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(rootpane,"Acceso denegado","Acceso al Sistema",JOptionPane.ERROR_MESSAGE);
             }
             
             
@@ -204,7 +205,7 @@ public class frmusuariologin extends javax.swing.JFrame {
         }
         
         
-    }//GEN-LAST:event_IngresarActionPerformed
+    }//GEN-LAST:event_btningresarActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
         // TODO add your handling code here:
@@ -253,13 +254,13 @@ public class frmusuariologin extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Ingresar;
+    private javax.swing.JButton btningresar;
     private javax.swing.JButton btnsalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable tablalistado;
     private javax.swing.JPasswordField txtpassword;
     private javax.swing.JTextField txtusuario;

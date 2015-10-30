@@ -78,8 +78,8 @@ public class freserva {
      }
     
      public boolean insertar (vreserva dts){
-       sSQL="insert into reserva(Idhabitacion,Idcliente,Idtrabajador,Tipo_reserva,Fecha_reserva,Fecha_ingresa,Fecha_salida,Costo_alojamiento,Estado)" +
-          "values (?,?,?,?,?,?,?,?,?)" ;    
+        sSQL="insert into reserva(Idhabitacion,Idcliente,Idtrabajador,Tipo_reserva,Fecha_reserva,Fecha_ingresa,Fecha_salida,Costo_alojamiento,Estado)" +
+            "values (?,?,?,?,?,?,?,?,?)" ;    
          try {
            
              PreparedStatement pst=(PreparedStatement) cn.prepareStatement(sSQL); 

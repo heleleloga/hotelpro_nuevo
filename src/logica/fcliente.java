@@ -100,7 +100,7 @@ public class fcliente {
                 int n2 = pst2.executeUpdate();
 
                 if (n2 != 0) {
-                    return false;
+                    return true;
                 } else {
 
                     return false;
