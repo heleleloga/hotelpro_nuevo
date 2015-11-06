@@ -39,7 +39,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <Component id="jLabel1" min="-2" pref="28" max="-2" attributes="0"/>
-              <EmptySpace pref="10" max="32767" attributes="0"/>
+              <EmptySpace pref="22" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
                   <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
@@ -117,8 +117,8 @@
                               </Group>
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="dcfecha_ingresa" min="-2" max="-2" attributes="0"/>
-                                      <Component id="dcfecha_reserva" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dcfecha_reserva" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dcfecha_ingresa" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="dcfecha_salida" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -133,7 +133,7 @@
                       <Component id="jLabel7" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
                       <Component id="jLabel8" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="409" max="32767" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -197,7 +197,7 @@
                       <Component id="jLabel8" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Component id="dcfecha_reserva" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                       <Component id="dcfecha_ingresa" min="-2" max="-2" attributes="0"/>
@@ -445,7 +445,11 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btnverconsumo" min="-2" pref="112" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="btnrealizarpago" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="lbltotalregistros" min="-2" pref="124" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               </Group>
@@ -488,7 +492,11 @@
                   <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   <Component id="jScrollPane3" min="-2" pref="108" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="207" max="-2" attributes="0"/>
-                  <Component id="lbltotalregistros" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lbltotalregistros" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnverconsumo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnrealizarpago" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace pref="31" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -587,8 +595,24 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="cc" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="REGISTROS"/>
+            <Property name="text" type="java.lang.String" value="REGISTROS:"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnverconsumo">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="CONSUMOS"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnverconsumoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnrealizarpago">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="REALIZAR PAGOS"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnrealizarpagoActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

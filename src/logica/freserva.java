@@ -144,6 +144,43 @@ public class freserva {
   
      }
     
+      
+      public boolean pagar (vreserva dts){
+         sSQL=" update reserva set Estado='Pagada'"+
+          " where Idreserva=?";           
+                 
+          try {
+              PreparedStatement pst=(PreparedStatement) cn.prepareStatement(sSQL); 
+             
+             
+             
+             pst.setInt( 1, dts.getIdreserva());
+              
+             int n=pst.executeUpdate();
+             if (n!=0){
+                 return true;
+               } 
+             else{
+                 return false;
+             }
+         } catch (Exception e) {
+             JOptionPane.showConfirmDialog(null, e);
+            return false;
+         }
+    
+         
+  
+     }
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
        public boolean eliminar (vreserva dts){
            sSQL="delete from reserva where Idreserva=?";
         

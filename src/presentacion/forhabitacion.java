@@ -497,7 +497,8 @@ public class forhabitacion extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnguardarActionPerformed
 
     private void btneliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneliminarActionPerformed
-         if (txtidhabitacion.getText().equals("")) {
+      
+        if (txtidhabitacion.getText().equals("")) {
             int confirmacion=JOptionPane.showConfirmDialog(rootPane,"estas seguro de eliminar la habitacion?","confirmar",2);
             if (confirmacion==0) {
                 fhabitacion func= new fhabitacion();
