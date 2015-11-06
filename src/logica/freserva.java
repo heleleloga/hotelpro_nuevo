@@ -35,7 +35,7 @@ public class freserva {
         Modelo = new DefaultTableModel(null, titulos);
         
         sSQL = "select r.Idreserva,r.Idhabitacion,h.Numero,r.Idcliente,"+
-               "(select nombre from persona where Idpersona=r.Idcliente)as clieten,"+
+               "(select nombre from persona where Idpersona=r.Idcliente)as clienten,"+
                "(select Apellidos from persona where Idpersona=r.Idcliente)as clienteAp,"+
                "r.Idtrabajador,(select nombre from persona where Idpersona=r.Idtrabajador)as trabajadorn,"+
                "(select Apellidos from persona where Idpersona=r.Idtrabajador)as trabajadorAp,"+
